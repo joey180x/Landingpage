@@ -15,6 +15,8 @@ $('a').click(function(){
     return false;
 });
 
+
+// back to top function
 $(window).scroll(function() {
   var backToTopButton = $("#back-to-top");
   if ( $(window).scrollTop() >= 200 ) {
@@ -29,3 +31,21 @@ $(window).scroll(function() {
   });
   return false;
 });
+
+
+
+$( "li" ).hover(
+  function() {
+      $(this).find("span").stop().animate({
+      width:"100%",
+      opacity:"1",
+    }, 400, function () {
+    })
+  }, function() {
+      $(this).find("span").stop().animate({
+      width:"0%",
+      opacity:"0",
+    }, 400, function () {
+    })
+  }
+);
