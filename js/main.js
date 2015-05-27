@@ -19,7 +19,7 @@ $('a').click(function(){
 // back to top function
 $(window).scroll(function() {
   var backToTopButton = $("#back-to-top");
-  if ( $(window).scrollTop() >= 200 ) {
+  if ( $(window).scrollTop() >= 300 ) {
     backToTopButton.css("bottom", "50px"); 
   } else {
     backToTopButton.attr('style', '');
@@ -34,18 +34,29 @@ $(window).scroll(function() {
 
 
 
-$( "li" ).hover(
-  function() {
-      $(this).find("span").stop().animate({
-      width:"100%",
-      opacity:"1",
-    }, 400, function () {
-    })
-  }, function() {
-      $(this).find("span").stop().animate({
-      width:"0%",
-      opacity:"0",
-    }, 400, function () {
-    })
-  }
-);
+$(document).ready(function() {
+  $('.slideleft').click(function() {
+    var $lefty = $(this).next();
+    $lefty.animate({
+      left: parseInt($lefty.css('left'),10) == 0 ?
+        -$lefty.outerWidth() :
+        0
+    });
+  });
+});
+
+// $( "li" ).hover(
+//   function() {
+//       $(this).find("span").stop().animate({
+//       width:"100%",
+//       opacity:"1",
+//     }, 400, function () {
+//     })
+//   }, function() {
+//       $(this).find("span").stop().animate({
+//       width:"0%",
+//       opacity:"0",
+//     }, 400, function () {
+//     })
+//   }
+// );
