@@ -84,7 +84,7 @@ overflow:hidden;
  color: #fff8de;
     background-color: rgba(0,0,0,0.5);
     padding: 10px 5px;
-   font-size: 15px;
+   font-size: 20px;
     line-height: 20px;
     margin-bottom: 12px;
     margin-left: 100px;
@@ -97,33 +97,7 @@ overflow:hidden;
   background-color: dodgerblue;
 }
 */
-form.email p {
-font-size: 15px;
-padding left:;
-}
 
-form.email input, form.email textarea {
-font-family: Arial;
-font-size: 15px;
-
-}
-
-form.email input {
-background: #f5f5f5;
-}
-
-form.email textarea {
-background: #f5f5f5;
-
-}
-
-form.email input.send {
-color: #fff;
-background: #222;
-border: #000;
-
-cursor: pointer;
-}
 
 #back-to-top {
   width: 60px;
@@ -196,6 +170,10 @@ nav a:hover, .account a:hover {
 /*Media Query*/
 
 @media only screen and (min-device-width : 375px) and (max-device-height : 667px) {
+  
+
+
+
 
 #back-to-top{
   width: 60px;
